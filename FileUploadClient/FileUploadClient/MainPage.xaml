@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FileUploadClient.MainPage">
+    <Grid>
+        <Label x:Name="status" HorizontalOptions="Center" Margin="10,2" Text="链接成功"/>
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Text="请输入主机IP" HorizontalOptions="Center" FontSize="30" Grid.Row="0"/>
+            <Entry Grid.Row="1" x:Name="inputIp" WidthRequest="250" HeightRequest="30" />
+            <Button Grid.Row="2" Text="连接" Clicked="Button_Clicked"></Button>
+        </Grid>
+    </Grid>
+   
+        
+
+</ContentPage>
